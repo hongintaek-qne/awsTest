@@ -1,0 +1,101 @@
+@import url("./font.css");
+.visual.main {
+  color: #fff;
+  position: relative;
+  li {
+    display: flex;
+    overflow: hidden;
+    > div {
+      height: 110px;
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      * {
+        margin-left: 40px;
+      }
+      .visual-img {
+        width: 800px;
+        height: 100%;
+      }
+      p {
+        font-family: "futureZ";
+        font-size: 96px;
+        white-space: nowrap;
+      }
+    }
+    .animation1 {
+      animation: animate linear 80s infinite;
+      animation-delay: -80s;
+    }
+    .animation2 {
+      animation: animate2 80s linear infinite;
+      animation-delay: -40s;
+    }
+  }
+  .visual-item-1 {
+    margin-left: -1000px;
+    .visual-img {
+      background: url("/src/asset/img/visual1.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  .visual-item-2 {
+    margin-left: -500px;
+    .visual-img {
+      background: url("/src/asset/img/visual2.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  .visual-item-3 {
+    margin-left: -250px;
+    .visual-img {
+      background: url("/src/asset/img/visual3.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  .visual-item-4 {
+    margin-left: -2250px;
+    .visual-img {
+      background: url("/src/asset/img/visual4.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  .visual-item-5 {
+    margin-left: -0px;
+    .visual-img {
+      background: url("/src/asset/img/visual5.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  .visual-item-6 {
+    margin-left: -750px;
+    .visual-img {
+      background: url("/src/asset/img/visual6.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+@keyframes animate {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}

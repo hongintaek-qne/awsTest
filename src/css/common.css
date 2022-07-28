@@ -1,0 +1,109 @@
+@import url("./font.css");
+body {
+  background-color: #000;
+}
+body header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  width: calc(100% - 400px);
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 200px;
+  background-color: #fff;
+}
+body header .glb {
+  display: flex;
+}
+body header .glb li {
+  color: #000;
+  padding: 16px;
+  font-size: 1rem;
+}
+body .visual {
+  width: 100%;
+}
+body .visual .contents {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+body .visual .contents .title {
+  font-family: "FutureZ";
+  font-size: 48px;
+  text-align: center;
+}
+body .visual .contents .txt {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  line-height: 150%;
+  margin-top: 32px;
+}
+body .container {
+  color: #fff;
+  padding: 0 200px 40px;
+}
+body .container .lnb {
+  display: flex;
+  justify-content: space-between;
+}
+body .container .lnb li {
+  width: 100%;
+  text-align: center;
+  padding: 16px 0;
+  background-color: #333;
+  font-size: 18px;
+  font-weight: 400;
+}
+body .container .lnb li.on,
+body .container .lnb li:hover {
+  background-color: #000;
+}
+body .container .lnb li.off {
+  background-color: #333;
+}
+body .container .contents {
+  text-align: center;
+  padding: 144px 32px 64px;
+}
+body .container .contents .title {
+  font-size: 48px;
+  font-weight: 700;
+}
+body .container .contents .txt {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 32px;
+  line-height: 130%;
+  white-space: pre-line;
+}
+body footer {
+  display: flex;
+  padding: 160px 200px 100px;
+  color: #fff;
+}
+body footer .footer_contents {
+  margin-left: 32px;
+}
+body footer .footer_contents .footer_title {
+  font-family: "futureZ";
+  font-size: 32px;
+}
+body footer .footer_contents .footer_txt {
+  margin-top: 16px;
+  font-family: "Noto Sans";
+  font-size: 14px;
+  line-height: 130%;
+}
+
+@media screen and (min-width: 1400px) {
+  header {
+    padding: 0;
+    background-color: red;
+  }
+}
+
+/*# sourceMappingURL=common.css.map */

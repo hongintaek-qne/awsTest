@@ -1,0 +1,121 @@
+@import url("./font.css");
+
+.visual.about {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../asset/img/about_visual.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba($color: #000000, $alpha: 0.83);
+  background-blend-mode: multiply;
+}
+.con {
+  padding: 64px 0;
+  .con-list {
+    display: flex;
+    justify-content: space-between;
+    .con-list-item {
+      height: 600px;
+      padding: 32px;
+      border: 1px solid #fff;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 0;
+      .con-list-img {
+        border: 1px solid #fff;
+        border-radius: 100%;
+        padding: 60px;
+        width: fit-content;
+        img {
+          width: 90px;
+          height: 90px;
+        }
+      }
+      .con-list-tit {
+        font-size: 28px;
+        font-weight: 600;
+        margin-top: 48px;
+      }
+      .con-list-txt {
+        text-align: left;
+        font-size: 18px;
+        margin-top: 24px;
+        line-height: 170%;
+        list-style: disc;
+        padding-left: 1em;
+      }
+    }
+    .con-list-item.vision {
+      height: 400px;
+      .con-list-txt {
+        padding-left: 0;
+      }
+    }
+    .con-list-item.certify {
+      height: auto;
+      margin-right: 0 !important;
+      background-color: #fff;
+      .con-list-tit {
+        color: #000;
+        font-size: 20px;
+      }
+    }
+    .con-list-item:not(:last-child) {
+      margin-right: 32px;
+    }
+    .history {
+      display: flex;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 48px;
+
+      p {
+        font-size: 48px;
+      }
+      ul {
+        margin-left: 16px;
+        font-size: 20px;
+        line-height: 130%;
+        font-weight: 200;
+        list-style: disc;
+        padding-left: 1em;
+      }
+    }
+  }
+  :first-child.history {
+    margin-right: 16px;
+  }
+}
+
+@media screen and (max-width: 1608px) {
+  .con-list {
+    .con-list-item {
+      height: 360px;
+      border: 1px solid #fff;
+      .con-list-img {
+        width: fit-content;
+        border: 1px solid #fff;
+        border-radius: 100%;
+        padding: 40px;
+        img {
+          width: 45px;
+          height: 45px;
+        }
+      }
+      .con-list-tit {
+        font-size: 18px;
+        margin-top: 32px;
+      }
+      .con-list-txt {
+        font-size: 12px;
+        margin-top: 16px;
+      }
+    }
+    .con-list-item:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+}
